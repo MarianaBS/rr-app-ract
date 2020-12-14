@@ -7,7 +7,9 @@ class App extends Component {
   state = {
     boilersTypes
   };
-
+  delBoilerType = (id) =>{
+    this.setState({boilersTypes: [...this.state.boilersTypes.filter(boilerType => boilerType.id !== id)]})
+  }
   render() {
     return (
       <div className="App">
@@ -19,7 +21,7 @@ class App extends Component {
           <li>Stock</li>
           <li>Actions</li>
         </ul>
-        <BoilersTypes boilersTypes={this.state.boilersTypes}/>
+        <BoilersTypes boilersTypes={this.state.boilersTypes} delBoilerType={this.delBoilerType}/>
       </div>
     );
   }

@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
+import btnEdit from './pencil.png'
 
 export class BoilersTypesItem extends Component {
   ulStyle = () =>{
@@ -32,8 +33,8 @@ export class BoilersTypesItem extends Component {
           {this.props.boilerType.stock}
         </li>
         <div style={this.liStyle()}>
-          <button style={btnStyle}> EDIT</button>
-          <button style={btnStyle} onClick>X</button>
+          <button style={btnStyle}>Edit</button>
+          <button style={btnStyle} onClick={this.props.delBoilerType.bind(this, this.props.boilerType.id)}>Delete</button>
         </div>
       </ul>
     )
@@ -47,7 +48,7 @@ const btnStyle={
   color: 'white',
   border: 'none',
   padding: '5px 9px',
-  borderRadius: '50%',
+  borderRadius: '10%',
   cursor:'pointer',
 }
 export default BoilersTypesItem
