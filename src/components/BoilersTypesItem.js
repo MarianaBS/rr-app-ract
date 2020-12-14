@@ -1,6 +1,5 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types';
-import btnEdit from './pencil.png'
 
 export class BoilersTypesItem extends Component {
   ulStyle = () =>{
@@ -50,5 +49,6 @@ const btnStyle={
   padding: '5px 9px',
   borderRadius: '10%',
   cursor:'pointer',
+  marginLeft: '5px'
 }
-export default BoilersTypesItem
+export default BoilersTypesItem; 
