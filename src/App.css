@@ -2,22 +2,28 @@
   text-align: left;
   margin: 10px;
   padding: 0%;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
-.App-header {
+.App h2, h1{
   background-color: #582588;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  font-size: calc(10px + 2vmin);
   color: white;
-  font-weight: bold;
+  text-align: center;
 }
-.App-header .App-title {
-  font-family:Verdana, Geneva, Tahoma, sans-serif;
-}
-.App-link {
-  color: #61dafb;
-}
-.especial {
+#especial {
   color:#25cefd;
+}
+ul.list-style {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    list-style-type: none;
+    padding: 10px;
+    color: #7364af;
+    border-bottom: 1px dotted black;
+    font-size: 18px;
+}
+ul.list-style li{
+  text-align: center;
+  width: 100%
+  
 }
