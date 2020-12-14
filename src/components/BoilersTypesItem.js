@@ -31,6 +31,10 @@ export class BoilersTypesItem extends Component {
         <li style={this.liStyle()}>
           {this.props.boilerType.stock}
         </li>
+        <div style={this.liStyle()}>
+          <button style={btnStyle}> EDIT</button>
+          <button style={btnStyle} onClick>X</button>
+        </div>
       </ul>
     )
   }
@@ -38,4 +42,12 @@ export class BoilersTypesItem extends Component {
 BoilersTypesItem.propTypes = {
   boilerType: PropTypes.object.isRequired
 } 
+const btnStyle={
+  backgroundColor:'#7364af',
+  color: 'white',
+  border: 'none',
+  padding: '5px 9px',
+  borderRadius: '50%',
+  cursor:'pointer',
+}
 export default BoilersTypesItem
