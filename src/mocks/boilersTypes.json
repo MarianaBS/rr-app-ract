@@ -1,0 +1,22 @@
+[ 
+  {
+    "id":1,
+    "description":"Type A",
+    "stock":11
+  },
+  {
+    "id":2,
+    "description":"Type B",
+    "stock":2
+  },
+  {
+    "id":3,
+    "description":"Type C",
+    "stock":4
+  },
+  {
+    "id":4,
+    "description":"Type D",
+    "stock":14
+    }
+  ]

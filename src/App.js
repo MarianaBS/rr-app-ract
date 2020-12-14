@@ -1,25 +1,19 @@
 import React, { Component } from 'react';
-import logo from './logo.svg';
 import './App.css';
+import BoilersTypes from './components/BoilersTypes';
+import boilersTypes from './mocks/boilersTypes.json'
 
 class App extends Component {
+  state = {
+    boilersTypes
+  };
+
   render() {
+    //console.log(this.state.boilersTypes);
     return (
       <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+        <h1>Boilers Types</h1>
+        <BoilersTypes boilersTypes={this.state.boilersTypes}/>
       </div>
     );
   }
