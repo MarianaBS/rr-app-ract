@@ -40,7 +40,8 @@ export class BoilersTypesItem extends Component {
   }
 }
 BoilersTypesItem.propTypes = {
-  boilerType: PropTypes.object.isRequired
+  boilerType: PropTypes.object.isRequired,
+  delBoilerType: PropTypes.func.isRequired,
 } 
 const btnStyle={
   backgroundColor:'#7364af',

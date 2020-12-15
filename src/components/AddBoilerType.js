@@ -1,4 +1,5 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 export class AddBoilerType extends Component {
     state = {
@@ -44,6 +45,9 @@ export class AddBoilerType extends Component {
         )
     }
 }
+AddBoilerType.propTypes = {
+    addBoilerType: PropTypes.func.isRequired,
+  } 
 const formStyle={
     //display: 'flex',
     margin: '10px',

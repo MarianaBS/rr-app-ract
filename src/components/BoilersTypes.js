@@ -10,7 +10,8 @@ class BoilersTypes extends Component {
   }
 }
 BoilersTypes.propTypes = {
-    boilersTypes: PropTypes.array.isRequired
+    boilersTypes: PropTypes.array.isRequired,
+    delBoilerType: PropTypes.func.isRequired,
 }
 export default BoilersTypes;
 
