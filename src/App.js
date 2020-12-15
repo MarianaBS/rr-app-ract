@@ -3,12 +3,21 @@ import Header from './components/layout/Header';
 import BoilersTypes from './components/BoilersTypes';
 import boilersTypes from './mocks/boilersTypes.json';
 import AddBoilerType from './components/AddBoilerType';
+import {v4 as uuid} from 'uuid';
 import './App.css';
 
 class App extends Component {
   state = {
     boilersTypes
   };
+  addBoilerType = ({description, stock}) =>{
+    const newBoilerType ={
+      id: uuid(),
+      description,
+      stock,
+    }
+    this.setState({boilersTypes: [...this.state.boilersTypes, newBoilerType]});
+  }
   delBoilerType = (id) =>{
     this.setState({boilersTypes: [...this.state.boilersTypes.filter(boilerType => {
       return boilerType.id !== id;
@@ -18,7 +27,7 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <AddBoilerType />
+        <AddBoilerType addBoilerType={this.addBoilerType} />
         <ul className="list-style">
           <li>ID</li>
           <li>Description</li>
