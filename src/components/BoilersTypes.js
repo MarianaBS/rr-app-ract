@@ -5,7 +5,12 @@ import PropTypes from 'prop-types';
 class BoilersTypes extends Component {
   render() {
     return this.props.boilersTypes.map((boilerType) =>(
-        <BoilersTypesItem key={boilerType.id} boilerType={boilerType} delBoilerType={this.props.delBoilerType}/>
+        <BoilersTypesItem 
+          key={boilerType.id} 
+          boilerType={boilerType} 
+          delBoilerType={this.props.delBoilerType} 
+          updateBoilerType={this.props.updateBoilerType}
+        />
     ))
   }
 }

@@ -27,7 +27,6 @@ class App extends Component {
     return (
       <div className="App">
         <Header />
-        <AddBoilerType addBoilerType={this.addBoilerType} />
         <ul className="list-style">
           <li>ID</li>
           <li>Description</li>
@@ -35,6 +34,7 @@ class App extends Component {
           <li>Actions</li>
         </ul>
         <BoilersTypes boilersTypes={this.state.boilersTypes} delBoilerType={this.delBoilerType}/>
+        <AddBoilerType addBoilerType={this.addBoilerType} />
       </div>
     );
   }
